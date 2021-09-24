@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".Activities.CompleteStatus">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="130dp"
+        app:lottie_rawRes="@raw/internet"
+        app:lottie_loop="true"/>
+
+    <ScrollView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_margin="12dp">
+
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/device_img"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/img_shape"
+                    android:padding="10dp"
+                    android:src="@drawable/iphone12promax"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/img_not_avl"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="Image not available"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/img_shape"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:layout_marginHorizontal="12dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/brand_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/img_shape"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:layout_marginHorizontal="12dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/model_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/img_shape"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black-List Status"
+                    android:layout_marginHorizontal="12dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/black_list_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/img_shape"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Received date"
+                    android:layout_marginHorizontal="12dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/received_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:background="@drawable/img_shape"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected processing in 7 days"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textColor="@color/blueish"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/note_shape">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueish"
+                        android:text="Note: "
+                        android:layout_marginHorizontal="12dp"
+                        android:background="@drawable/note_shape"
+                        android:textSize="17sp"/>
+
+                    <View
+                        android:layout_width="45dp"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:background="@color/blueish"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueish"
+                        android:text="Due to heavy work load we need upto 7 days to complete your request."
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/note_shape"
+                        android:textSize="17sp"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnUnlockNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:text="Add unlock now"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="40dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@drawable/gradient_shape3"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

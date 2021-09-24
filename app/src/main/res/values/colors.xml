@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CCCCCC</color>
+    <color name="colorPrimaryDark">#CCCCCC</color>
+    <color name="colorAccent">#CCCCCC</color>
+    <color name="dardapp">#AFAEAE</color>
+
+    <color name="error_color">#F44336</color>
+    <color name="green">#57CC2E</color>
+
+    <color name="gray">#757575</color>
+    <color name="yellowish">#FDD835</color>
+    <color name="blueish">#1976D2</color>
+</resources>

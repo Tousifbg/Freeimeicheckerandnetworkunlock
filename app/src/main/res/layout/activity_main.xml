@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/adView"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:layout_above="@id/ad_view_container"
+        android:id="@+id/mainLayout"
+        android:layout_marginBottom="20dp"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/checkImei"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/imeicheckerbtn" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/status"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/imeicheckerbtn" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/icloudByPass"
+            android:layout_weight="1"
+            android:src="@drawable/icloudunlockbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:onClick="isoCodes"
+            android:layout_marginTop="5dp"
+            android:id="@+id/iosversionbtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ioscodesbtn" />
+        <ImageView
+            android:onClick="iosVersions"
+            android:layout_marginTop="5dp"
+            android:id="@+id/iosCodes"
+            android:layout_weight="1"
+            android:src="@drawable/iosversionbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <ImageView
+
+        android:onClick="contactUs"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/contactusbtn"/>
+    <ImageView
+        android:visibility="invisible"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/contactusbtn"/>
+    <ImageView
+        android:onClick="rateUs"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rateustbn"/>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

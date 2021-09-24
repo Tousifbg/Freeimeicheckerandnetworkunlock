@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "659191095017",
+    "firebase_url": "https://corvidtech.firebaseio.com",
+    "project_id": "corvidtech",
+    "storage_bucket": "corvidtech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659191095017:android:c879f3b2e0e8a5bc",
+        "android_client_info": {
+          "package_name": "free.imei.check.and.network.unlocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659191095017-siopm4hrhidof450fib6suk8r9oj2sh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "free.imei.check.and.network.unlocker",
+            "certificate_hash": "3d52b78659fad2d888987dea87d9b4be7b14fb48"
+          }
+        },
+        {
+          "client_id": "659191095017-dvka3u1ef6oanigrr6qq97s2skr7kqhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdYyJKxxYNG08MSOIVJQMPEnW3zrVGcT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659191095017-dvka3u1ef6oanigrr6qq97s2skr7kqhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
